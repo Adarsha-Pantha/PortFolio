@@ -142,6 +142,22 @@ li {
     color: #00ff00; /* Change color on hover to green */
 }
 
+.contact-icons a[href*="linkedin"]:hover {
+    color: #0077b5; /* Blue for LinkedIn */
+}
+
+.contact-icons a[href*="facebook"]:hover {
+    color: #3b5998; /* Blue for Facebook */
+}
+
+.contact-icons a[href*="instagram"]:hover {
+    color: #e4405f; /* Pinkish-white for Instagram */
+}
+
+.contact-icons a[href*="github"]:hover {
+    color: #6e5494; /* Brown for GitHub */
+}
+
 /* Footer with green glowing border */
 footer {
     padding: 20px;
