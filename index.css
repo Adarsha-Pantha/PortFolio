@@ -1,0 +1,166 @@
+/* Add the glowing effect for section headers and other UI adjustments */
+
+/* Background for the whole body */
+body {
+    background: url('portfoliBg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* Adjust text color for visibility */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered Navbar with green glowing border and rounded corners */
+.navbar {
+    position: fixed;
+    top: 10px; /* Adjusted to allow for space from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 255, 0, 0.5); /* Green glow */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Green glow */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #00ff00; /* Change color on hover to green */
+}
+
+/* Header with larger image and green glowing effect */
+.page-header {
+    text-align: center;
+    padding: 100px 20px 50px; /* Adjusted padding */
+    position: relative;
+}
+
+.page-header .header-img {
+    width: 200px; /* Adjusted size */
+    height: 200px; /* Adjusted size */
+    border-radius: 50%;
+    border: 4px solid rgba(0, 255, 0, 0.5); /* Green glow */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Green glow */
+    object-fit: cover;
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.page-header .header-img:hover {
+    border: 4px solid rgba(255, 255, 0, 0.5); /* Yellow glow on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5); /* Yellow glow on hover */
+}
+
+.page-header h1 {
+    font-size: 3em;
+    margin: 20px 0 10px;
+    color: #ffffff;
+}
+
+.page-header p {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+/* Section styles */
+section {
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+section:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.5); /* Glowing white line */
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glow 1.5s infinite alternate;
+}
+
+p, ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Contact section icons */
+.contact-icons a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+    color: #00ff00; /* Change color on hover to green */
+}
+
+/* Footer with green glowing border */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-top: 2px solid rgba(0, 255, 0, 0.5); /* Green glow */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Green glow */
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
+}
