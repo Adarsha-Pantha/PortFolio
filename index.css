@@ -1,4 +1,3 @@
-
 body {
     background: url('portfoliBg.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -45,9 +44,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #00ff00; /
+    color: #00ff00;
 }
-
 
 .page-header {
     text-align: center;
@@ -79,7 +77,6 @@ body {
     font-size: 1.5em;
     color: #ffcc00;
 }
-
 
 section {
     padding: 100px 20px;
@@ -125,7 +122,6 @@ li {
     margin: 10px 0;
 }
 
-
 .contact-icons a {
     display: inline-block;
     margin: 10px;
@@ -154,7 +150,6 @@ li {
     color: #6e5494; 
 }
 
-
 footer {
     padding: 20px;
     text-align: center;
@@ -174,5 +169,50 @@ footer p {
     }
     to {
         text-shadow: 0 0 20px #ffffff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page-header {
+        padding: 70px 10px 30px;
+    }
+
+    .page-header .header-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .page-header h1 {
+        font-size: 2.5em;
+    }
+
+    .page-header p {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 70px 10px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    .contact-icons a {
+        font-size: 1.2em;
     }
 }
