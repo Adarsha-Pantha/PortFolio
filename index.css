@@ -5,11 +5,12 @@ body {
     margin: 0;
     color: #ffffff; 
     padding: 0;
+    padding-top: 60px;
 }
 
 .navbar {
     position: fixed;
-    top: 10px; 
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -89,9 +90,9 @@ section:after {
     display: block;
     height: 2px;
     width: 80%;
-    background: rgba(255, 255, 255, 0.5); /* Glowing white line */
+    background: rgba(255, 255, 255, 0.5);
     margin: 50px auto;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .container {
@@ -155,8 +156,8 @@ footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
-    border-top: 2px solid rgba(0, 255, 0, 0.5); /* Green glow */
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Green glow */
+    border-top: 2px solid rgba(0, 255, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); 
 }
 
 footer p {
@@ -172,15 +173,19 @@ footer p {
     }
 }
 
-
 @media (max-width: 768px) {
     .navbar {
-        width: 90%;
+        width: 100%;
     }
 
     .navbar ul {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
         gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 0.8em;
     }
 
     .page-header {
@@ -193,11 +198,11 @@ footer p {
     }
 
     .page-header h1 {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     .page-header p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     section {
